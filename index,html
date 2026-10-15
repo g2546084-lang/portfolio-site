@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang ="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Yusei Fujii</title>
+    </head>
+    <body>
+        <header>
+            <p>Yusei Fujii</p>
+        </header>
+        <main>
+            <img src="./media/c:\Users\fyuse\Downloads\web loo\media\tullys_logo.jpg" width="80%"
+            <img src="./media/とさか
+            <img src="./media/動画編集.png" width="80%"
+            <h1>
+               Yusei Fuji<br>
+               portfolio 
+            </h1>
+            <h3>About</h3>
+            <p>
+                藤井裕聖<br>
+                東京都市大学デザイン・データ科学部
+            </p>
+            <p>
+                生年月日:2006年8月28日<br>
+                出身地:埼玉県所沢市<br>
+                趣味:山登り
+            </p>
+            <h3>Works</h3>
+            <ul>
+                <li>タリーズコーヒー</li>
+                <li>居酒屋とさか</li>
+                <li>動画編集</li>
+            </ul>
+        <footer>
+            <span>© 2026 Yusei Fujii</span>
+        </footer>
+    </body>
+</html>        
