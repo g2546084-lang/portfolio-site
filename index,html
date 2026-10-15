@@ -1,39 +1,162 @@
+
 <!DOCTYPE html>
-<html lang ="ja">
-    <head>
-        <meta charset="UTF-8">
-        <title>Yusei Fujii</title>
-    </head>
-    <body>
-        <header>
-            <p>Yusei Fujii</p>
-        </header>
-        <main>
-            <img src="./media/c:\Users\fyuse\Downloads\web loo\media\tullys_logo.jpg" width="80%"
-            <img src="./media/とさか
-            <img src="./media/動画編集.png" width="80%"
-            <h1>
-               Yusei Fuji<br>
-               portfolio 
-            </h1>
-            <h3>About</h3>
-            <p>
-                藤井裕聖<br>
-                東京都市大学デザイン・データ科学部
-            </p>
-            <p>
-                生年月日:2006年8月28日<br>
-                出身地:埼玉県所沢市<br>
-                趣味:山登り
-            </p>
-            <h3>Works</h3>
-            <ul>
-                <li>タリーズコーヒー</li>
-                <li>居酒屋とさか</li>
-                <li>動画編集</li>
-            </ul>
-        <footer>
-            <span>© 2026 Yusei Fujii</span>
-        </footer>
-    </body>
-</html>        
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yusei Fujii | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="#top" class="logo">YF<span>®</span></a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#works">Works</a>
+  </nav>
+  <span class="header-note">PORTFOLIO — 2026</span>
+</header>
+
+<main>
+  <!-- 表紙 -->
+  <section class="cover" id="top">
+    <div class="top-line">
+      <span>PORTFOLIO</span>
+      <span>2026 / TOKYO</span>
+    </div>
+
+    <div class="cover-title">
+      <p>日々の経験と、好きなこと。</p>
+      <h1>YUSEI<br>FUJII<span>.</span></h1>
+      <div class="portfolio-label">PORTFOLIO</div>
+    </div>
+
+    <div class="cover-photo">
+      <img src="./media/きれいな画像.jpg" alt="風景写真">
+    </div>
+
+    <div class="cover-bottom">
+      <p>東京都市大学 デザイン・データ科学部<br>
+      自分の興味や日々の経験をまとめたポートフォリオ。</p>
+      <a href="#about">SCROLL ↓</a>
+    </div>
+  </section>
+
+  <!-- 自己紹介 -->
+  <section class="about section" id="about">
+    <div class="section-top">
+      <span>About</span>
+      <span>01 / PROFILE</span>
+    </div>
+
+    <div class="about-heading">
+      <h2>自己紹介<span>。</span></h2>
+      <p>YUSEI FUJII<br><small>DESIGN & DAILY LIFE</small></p>
+    </div>
+
+    <div class="about-content">
+      <div class="mountain-photo">
+        <img src="./media/やっまや2.jpg" alt="山登りの風景">
+        <p>好きなことのひとつ、山登り。</p>
+      </div>
+
+      <div class="about-text">
+        <h3>新しい景色に出会い、<br>自分の視野を広げる。</h3>
+        <p>
+          東京都市大学デザイン・データ科学部に在学中。
+          埼玉県所沢市出身です。
+          趣味は山登りと筋トレ。
+          自然の中で新しい景色に出会うことや、
+          目標に向かって努力することを大切にしています。
+          大学での学びや日々の経験を通して、
+          自分らしい視点や考え方を深めています。
+        </p>
+
+        <div class="profile-list">
+          <div><span>NAME</span><strong>藤井 裕聖</strong></div>
+          <div><span>UNIVERSITY</span><strong>東京都市大学<br>デザイン・データ科学部</strong></div>
+          <div><span>FROM</span><strong>埼玉県所沢市</strong></div>
+          <div><span>HOBBIES</span><strong>山登り・筋トレ</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 作品・経験 -->
+  <section class="works section" id="works">
+    <div class="section-top">
+      <span>Works</span>
+      <span>02 / EXPERIENCE</span>
+    </div>
+
+    <div class="works-heading">
+      <h2>これまでの経験<span>。</span></h2>
+      <p>アルバイトや制作活動を通して<br>経験したことを紹介します。</p>
+    </div>
+
+    <article class="work-item">
+      <div class="work-text">
+        <span class="work-number">01 / PART-TIME JOB</span>
+        <h3>タリーズコーヒー</h3>
+        <span class="category">アルバイト</span>
+        <p>接客やドリンクの作成を通して、コミュニケーションやチームで働くことの大切さを学んでいます。</p>
+      </div>
+      <div class="work-photo">
+        <img src="./media/タリーズ2.jpg" alt="タリーズコーヒー">
+      </div>
+    </article>
+
+    <article class="work-item reverse">
+      <div class="work-text">
+        <span class="work-number">02 / PART-TIME JOB</span>
+        <h3>居酒屋 とさか</h3>
+        <span class="category">アルバイト</span>
+        <p>周りと協力しながら仕事を進める力や、状況に合わせて行動することの大切さを学びました。</p>
+      </div>
+      <div class="work-photo">
+        <img src="./media/とさか.webp" alt="居酒屋とさか">
+      </div>
+    </article>
+
+    <article class="work-item">
+      <div class="work-text">
+        <span class="work-number">03 / CREATIVE</span>
+        <h3>動画編集</h3>
+        <span class="category">制作活動</span>
+        <p>映像の構成や見せ方を考えながら動画編集に取り組んでいます。伝えたい内容に合わせて工夫することを大切にしています。</p>
+      </div>
+      <div class="work-photo">
+        <img src="./media/動画編集2.jpg" alt="動画編集">
+      </div>
+    </article>
+
+    <div class="works-footer">
+      <span>SELECTED EXPERIENCES</span>
+      <span>03 ITEMS ↗</span>
+    </div>
+  </section>
+
+  <!-- 最後 -->
+  <section class="thanks">
+    <div class="section-top">
+      <span>Thank you</span>
+      <span>03 / END</span>
+    </div>
+
+    <div class="thanks-content">
+      <p>最後まで見ていただき、ありがとうございます。</p>
+      <h2>THANK<br>YOU<span>.</span></h2>
+      <a href="#top" class="back-top">ページの先頭へ ↑</a>
+    </div>
+
+    <footer>
+      <a href="#top" class="logo">YF<span>®</span></a>
+      <span>藤井 裕聖 / PORTFOLIO</span>
+      <span>© 2026</span>
+    </footer>
+  </section>
+</main>
+
+</body>
+</html>
