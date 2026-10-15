@@ -1,9 +1,9 @@
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap');
 
 :root {
-  --paper: #f3f2ee;
-  --white: #fff;
+  --paper: #f2f1ed;
+  --white: #ffffff;
   --ink: #171715;
   --muted: #77766f;
   --line: #cecdc6;
@@ -57,19 +57,17 @@ img {
 
 .header nav {
   display: flex;
-  gap: 32px;
+  gap: 30px;
   font: 500 13px "DM Sans", sans-serif;
 }
 
 .header-note,
 .top-line,
 .section-top,
+.portfolio-label,
 .work-number,
-.category,
-.works-footer,
-.portfolio-label {
-  font-family: "DM Mono", monospace;
-  font-size: 10px;
+.works-footer {
+  font: 10px "DM Mono", monospace;
   letter-spacing: .1em;
 }
 
@@ -138,7 +136,7 @@ img {
 }
 
 .cover-photo img {
-  object-position: center 55%;
+  object-position: center;
 }
 
 .cover-bottom {
@@ -192,7 +190,6 @@ img {
   letter-spacing: -.07em;
 }
 
-.about-name-en,
 .about-heading p {
   margin: 0;
   font: 500 17px/1.6 "DM Sans", sans-serif;
@@ -216,7 +213,11 @@ img {
 }
 
 .mountain-photo img {
+  width: 100%;
   aspect-ratio: 4 / 4.7;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
   background: #deddd6;
 }
 
@@ -275,78 +276,71 @@ img {
   line-height: 2;
 }
 
-.work-item {
+.works-grid {
   display: grid;
-  grid-template-columns: .7fr 1.3fr;
-  gap: 7%;
-  align-items: center;
-  padding: 27px 0;
-  border-top: 1px solid var(--line);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 36px 24px;
 }
 
-.work-item.reverse {
-  grid-template-columns: 1.3fr .7fr;
+.work-card {
+  min-width: 0;
 }
 
-.work-item.reverse .work-photo {
-  order: 0;
+.work-link {
+  display: block;
 }
 
-.work-item.reverse .work-text {
-  order: 1;
-}
-
-.work-text {
-  max-width: 340px;
-}
-
-.work-number {
-  color: var(--muted);
-  font-size: 9px;
-}
-
-.work-text h3 {
-  margin: 17px 0 8px;
-  font-size: clamp(22px, 3vw, 32px);
-  letter-spacing: -.05em;
-  font-weight: 600;
-}
-
-.category {
-  display: inline-block;
-  margin-bottom: 15px;
-  padding-bottom: 6px;
-  border-bottom: 1px solid var(--ink);
-  font-size: 9px;
-}
-
-.work-text p:last-child {
-  color: #55544e;
-  font-size: 12px;
-  line-height: 2.2;
-}
-
-.work-photo {
-  height: clamp(200px, 27vw, 330px);
+.work-image {
+  position: relative;
   overflow: hidden;
-  background: #d6d5cf;
+  aspect-ratio: 4 / 3;
+  background: #deddd6;
 }
 
-.work-photo img {
+.work-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: transform .4s ease;
 }
 
-.work-photo:hover img {
-  transform: scale(1.03);
+.work-link:hover .work-image img {
+  transform: scale(1.04);
 }
 
-.works-footer {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 15px;
-  margin-top: 20px;
-  border-top: 1px solid var(--line);
+.work-number {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 6px 9px;
+  background: white;
+  color: var(--ink);
+}
+
+.work-info {
+  position: relative;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.work-info h3 {
+  margin: 0 0 8px;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.work-info p {
+  margin: 0;
   color: var(--muted);
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.image-error {
+  padding: 20px;
+  color: #a22;
+  font-size: 12px;
+  overflow-wrap: anywhere;
 }
 
 .thanks {
@@ -389,7 +383,7 @@ footer {
 }
 
 footer > span {
-  font-size: 9px;
+  font: 9px "DM Mono", monospace;
 }
 
 @media (max-width: 700px) {
@@ -454,23 +448,13 @@ footer > span {
     font-size: 27px;
   }
 
-  .work-item,
-  .work-item.reverse {
+  .works-grid {
     grid-template-columns: 1fr;
-    gap: 15px;
-    padding: 22px 0;
+    gap: 28px;
   }
 
-  .work-item .work-photo,
-  .work-item.reverse .work-photo {
-    order: 0;
-    height: 230px;
-  }
-
-  .work-item .work-text,
-  .work-item.reverse .work-text {
-    order: 1;
-    max-width: none;
+  .work-info h3 {
+    font-size: 17px;
   }
 
   .thanks {
@@ -484,6 +468,4 @@ footer > span {
   footer {
     flex-wrap: wrap;
   }
-}
-
 }
